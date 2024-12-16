@@ -1,0 +1,176 @@
+/*styl celé stránky*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: aliceblue;
+  background-color: #777;
+}
+/*Styl mishelina*/
+.logo {
+  display: flex;
+  justify-content: left;
+  height: 140px
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+/*Odkazy na podstránky*/
+.odkazy {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  list-style-type: none;
+  transition: all 0.5s ease-in;
+}
+
+.odkazy a:hover {
+  border: aliceblue;
+  text-decoration: underline;
+}
+
+.odkazy img {
+  width: 250px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+}
+
+header {
+  background-color: #222;
+  text-decoration: none;
+}
+
+header a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.o-mne {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #333;
+}
+
+.koníčky {
+  background-color: #333;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/*Projekty*/
+.projekty {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.projekt1 {
+  border-radius: 20px 20px;
+  background-color: #333;
+  max-width: 33%;
+}
+
+.projekt1:hover {
+  transform: scale(1.01);
+}
+.projekt2 {
+  border-radius: 20px 20px;
+  background-color: #333;
+  max-width: 33%;
+}
+
+.projekt2:hover {
+  transform: scale(1.01);
+}
+
+.projekt3 {
+  border-radius: 20px 20px;
+  background-color: #333;
+  padding-bottom: 23px;
+  max-width: 33%;
+}
+  
+.projekt3:hover {
+  transform: scale(1.01);
+}
+
+.kontakt-responzivita {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Odkazy na soc, sítě*/
+.snapchat-2 img {
+  display: flex;
+  width: 300px;
+ height: auto;
+ margin-top: 80px;
+margin-bottom: 80px;
+}
+
+.instagram-2 img {
+  display: flex;
+  width: 300px;
+ height: auto;
+ margin-top: 80px;
+margin-bottom: 80px;
+ }
+
+
+ /*Část responzivity*/
+@media (max-width: 390px) {
+
+    .projekty { 
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .projekt1,
+    .projekt2,
+    .projekt3 {
+      margin-bottom: 40px;
+      max-width: none;
+    }
+  
+    .obrazky {
+      display: none;
+    }
+
+    .kontakt-responzivita {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .snapchat-2 img {
+      display: flex;
+      width: 120px;
+     height: auto;
+     margin-top: 80px;
+    margin-bottom: 80px;
+    }
+
+    .instagram-2 img {
+      display: flex;
+      width: 120px;
+     height: auto;
+     margin-top: 80px;
+    margin-bottom: 80px;
+     }
+
+  }
